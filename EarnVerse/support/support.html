@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & FAQ</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900">
+
+    <div class="app-container p-4 pt-0">
+
+        <!-- HEADER SECTION with Gradient Background -->
+        <header class="p-4 pt-8 pb-4 -mx-4 rounded-b-3xl relative" style="background: var(--header-gradient);">
+            <div class="flex items-center justify-between">
+                
+                <!-- Back Button -->
+                <button onclick="showModal('Navigating back...')" class="text-white flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <div>
+                        <h1 class="text-xl font-bold text-white tracking-wide">Support</h1>
+                        <p class="text-sm text-white/70">Online</p>
+                    </div>
+                </button>
+                
+                <!-- Status -->
+                <div class="flex items-center text-sm font-semibold text-white/90">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>24/7</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT CARD with Gradient Border -->
+        <main class="relative z-10 pt-8 -mt-2">
+            
+            <div class="support-card shadow-2xl">
+                <div class="support-card-inner">
+
+                    <!-- Greeting / Intro -->
+                    <div class="text-2xl font-extrabold text-center mb-6 pt-2">
+                        Hi.....How can <span class="text-purple-400">we help you?</span>
+                    </div>
+
+                    <!-- FAQ SECTION (Accordions) -->
+                    <h2 class="text-xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
+                    
+                    <div class="space-y-3">
+                        
+                        <!-- FAQ Item 1 -->
+                        <details class="accordion-item bg-gray-800 rounded-xl shadow-md border border-gray-700/50">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer text-base font-semibold text-white focus:outline-none">
+                                How do I withdraw my earnings?
+                                <!-- Chevron Icon -->
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </summary>
+                            <div class="accordion-content px-4 pb-4 pt-0 text-gray-300 border-t border-gray-700 mt-2">
+                                <p>You can withdraw your earnings directly to any of your personal crypto wallet anytime through the **Withdraw** button on your dashboard. Withdrawal is every 7 days (weekly).</p>
+                            </div>
+                        </details>
+
+                        <!-- FAQ Item 2 -->
+                        <details class="accordion-item bg-gray-800 rounded-xl shadow-md border border-gray-700/50">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer text-base font-semibold text-white focus:outline-none">
+                                How can I join the creator's pool?
+                                <!-- Chevron Icon -->
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </summary>
+                            <div class="accordion-content px-4 pb-4 pt-0 text-gray-300 border-t border-gray-700 mt-2">
+                                <p>Our comprehensive Web3 education course covers blockchain, DeFi, web3 skills, NFTs, and trading strategies over 6 weeks. After completing the course, you will be eligible to submit content.</p>
+                            </div>
+                        </details>
+
+                        <!-- FAQ Item 3 -->
+                        <details class="accordion-item bg-gray-800 rounded-xl shadow-md border border-gray-700/50">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer text-base font-semibold text-white focus:outline-none">
+                                After completing the course, what next?
+                                <!-- Chevron Icon -->
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </summary>
+                            <div class="accordion-content px-4 pb-4 pt-0 text-gray-300 border-t border-gray-700 mt-2">
+                                <p>Our comprehensive web3 course is broken into modules. Each module runs for 6 weeks. After completion, advance to the next module to unlock higher rewards and opportunities, including the Creator's Pool.</p>
+                            </div>
+                        </details>
+
+                    </div>
+                    
+                    <!-- Need Help Input / Chat Link -->
+                    <div class="mt-8 flex items-center bg-gray-700/50 rounded-xl p-2 pr-1">
+                        <input type="text" placeholder="Need help?" class="flex-grow bg-transparent text-white placeholder-gray-400 p-2 focus:outline-none" aria-label="Support chat prompt">
+                        <!-- Send Button -->
+                        <button class="bg-purple-600 hover:bg-purple-700 p-3 rounded-lg transition duration-200" onclick="showModal('Opening live chat with a support agent...')">
+                            <svg class="w-6 h-6 text-white transform rotate-45 -mt-0.5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FIXED BOTTOM NAVIGATION BAR (Reusing structure from prior designs) -->
+        <nav class="fixed bottom-0 left-0 right-0 h-16 bg-gray-800 border-t border-gray-700 shadow-2xl z-50">
+        <div class="max-w-xl mx-auto h-full flex items-center justify-around">
+
+            <!-- Home (Active) -->
+            <div class="nav-icon"><a href="../index.html">
+                <!-- Home Icon (inline SVG) -->
+                <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <span class="text-xs mt-1">Home</span>
+            </a></div>
+
+            <!-- Trivia -->
+            <div class="nav-icon"><a href="../trivia/trivia.html">
+                <!-- Group/Community Icon (inline SVG) -->
+                <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M12 18V5"/>
+                    <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/>
+                    <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/>
+                    <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/>
+                    <path d="M18 18a4 4 0 0 0 2-7.464"/>
+                    <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/>
+                    <path d="M6 18a4 4 0 0 1-2-7.464"/>
+                    <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/>
+                </svg>
+                <span class="text-xs mt-1">Trivia</span>
+            </a></div>
+
+            <!-- Team -->
+            <div class="nav-icon"><a href="../team/team.html">
+                <!-- Users/Team Icon (inline SVG) -->
+                <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  viewBox="0 0 24 24">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    <circle cx="9" cy="7" r="4"/>
+                </svg>
+                <span class="text-xs mt-1">Team</span>
+            </a></div>
+
+            <!-- Creators Pool -->
+            <div class="nav-icon"><a href="../creators pool/creator.html">
+                <!-- Group/Community Icon (inline SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-auto text-gray-400 group-hover:text-yellow-500 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/>
+                    <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/>
+                    <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
+                    <path d="M4 22h16"/>
+                    <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
+                    <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
+                </svg>
+                <span class="text-xs mt-1">Creators Pool</span>
+            </a></div>
+
+            <!-- Support -->
+            <div class="nav-icon active">
+                <!-- Question Mark Icon (inline SVG) -->
+                <div class="flex flex-col items-center gap-1 group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                    <path d="M12 17h.01"/>
+                </svg>
+                <span class="text-xs mt-1">Support</span>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- Custom Modal for Alerts (replacing alert()) -->
+    <div id="customModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center p-4 z-[100]">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-2xl max-w-sm w-full">
+            <h3 class="text-xl font-bold mb-3 text-white">Support Action</h3>
+            <p id="modalMessage" class="text-gray-300 mb-4"></p>
+            <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded-lg transition duration-200" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        // --- Modal Functions ---
+        const customModal = document.getElementById('customModal');
+        const modalMessage = document.getElementById('modalMessage');
+
+        function showModal(message) {
+            modalMessage.textContent = message;
+            customModal.classList.remove('hidden');
+            customModal.classList.add('flex');
+        }
+
+        function closeModal() {
+            customModal.classList.add('hidden');
+            customModal.classList.remove('flex');
+        }
+
+        // Add event listener to toggle the chevron icon on accordion open/close
+        document.querySelectorAll('.accordion-item').forEach(details => {
+            details.addEventListener('toggle', () => {
+                const chevron = details.querySelector('svg');
+                if (details.open) {
+                    chevron.classList.add('rotate-180');
+                } else {
+                    chevron.classList.remove('rotate-180');
+                }
+            });
+        });
+
+
+        // Initialize active nav state
+        window.onload = () => {
+             // Mock auth state for navigation icons
+            const supportIcon = document.querySelector('.nav-icon:nth-child(5)');
+            supportIcon.classList.add('active');
+        };
+    </script>
+
+</body>
+</html>

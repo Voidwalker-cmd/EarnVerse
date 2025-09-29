@@ -1,0 +1,66 @@
+ :root {
+            --bg-dark: #1e1e1e; /* A dark black/gray background matching the design */
+            --card-gradient: linear-gradient(135deg, #7c3aed, #10b981); /* Purple to Teal */
+            --button-gradient: linear-gradient(90deg, #9333ea, #a855f7); /* Lighter purple for button */
+            --green-text: #10b981;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .scroll-container {
+            /* Enable horizontal scrolling and hide the scrollbar */
+            overflow-x: auto;
+            white-space: nowrap;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+            padding-bottom: 1rem; /* Space below cards */
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .card-profits {
+            /* Apply the specific gradient background */
+            background: var(--card-gradient);
+            /* Ensure the text contrast is good */
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-withdraw {
+            background: var(--button-gradient);
+        }
+
+        .nav-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #888; /* Default inactive color */
+            transition: color 0.2s;
+        }
+
+        .nav-icon.active {
+            color: #fff; /* Active color */
+        }
+
+        /* Responsive max width for the app content */
+        .app-container {
+            max-width: 420px; /* Typical mobile width */
+            margin: 0 auto;
+            min-height: calc(100vh - 4rem); /* Deduct space for fixed bottom nav */
+            padding-bottom: 6rem; /* Ensure space for the fixed nav bar */
+        }
+
+        .tab-button.active {
+            color: white;
+            font-weight: 600;
+            border-bottom: 2px solid white;
+        }
